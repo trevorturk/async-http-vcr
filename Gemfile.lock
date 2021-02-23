@@ -1,0 +1,55 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
+    async (1.28.9)
+      console (~> 1.10)
+      nio4r (~> 2.3)
+      timers (~> 4.1)
+    async-http (0.54.1)
+      async (~> 1.25)
+      async-io (~> 1.28)
+      async-pool (~> 0.2)
+      protocol-http (~> 0.21.0)
+      protocol-http1 (~> 0.13.0)
+      protocol-http2 (~> 0.14.0)
+    async-io (1.30.2)
+      async (~> 1.14)
+    async-pool (0.3.5)
+      async (~> 1.25)
+    console (1.10.1)
+      fiber-local
+    crack (0.4.5)
+      rexml
+    fiber-local (1.0.0)
+    hashdiff (1.0.1)
+    minitest (5.14.3)
+    nio4r (2.5.5)
+    protocol-hpack (1.4.2)
+    protocol-http (0.21.0)
+    protocol-http1 (0.13.2)
+      protocol-http (~> 0.19)
+    protocol-http2 (0.14.2)
+      protocol-hpack (~> 1.4)
+      protocol-http (~> 0.18)
+    public_suffix (4.0.6)
+    rexml (3.2.4)
+    timers (4.3.3)
+    vcr (6.0.0)
+    webmock (3.11.2)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff (>= 0.4.0, < 2.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  async-http
+  minitest
+  vcr
+  webmock
+
+BUNDLED WITH
+   2.1.4
