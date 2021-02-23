@@ -33,7 +33,10 @@ class Test < Minitest::Test
     end
   end
 
-  # Remove the Transfer-Encoding header from the VCR cassette and it succeeds
+  # Remove the Transfer-Encoding header from the VCR cassette and it succeeds,
+  # but note that running the tests again seems to append a new "request" to
+  # the existing VCR cassette when I believe it should be left as-is. This may
+  # be an issue with VCR and/or async-http, I'm not sure.
   def test_ok_request
     VCR.use_cassette("dark_sky_2") do
       Sync do
