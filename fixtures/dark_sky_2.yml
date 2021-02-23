@@ -22,8 +22,6 @@ http_interactions:
       - Sat, 24 Mar 2018 06:09:31 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
       Connection:
       - keep-alive
       X-Forecast-Api-Calls:
